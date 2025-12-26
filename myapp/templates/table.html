@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+{% block title %}
+Data-Table
+{% endblock %}
+{% block content %}
+<table border = "1">
+    <tr>
+        {% for col in collist %}
+            <th>{{col}}</th>
+        {% endfor %}
+    </tr>
+    {% for record in datas %}
+    <tr>
+        {% for i in record %}
+            <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+</table>
+{% endblock %}
