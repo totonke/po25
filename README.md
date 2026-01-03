@@ -21,11 +21,6 @@ Raspberry Pi（サーバ：Gunicorn + Flask）
 MariaDB
 Web ブラウザ表示
 
-
-
-
-写真左 センサーArduino 写真右 サーバーRaspberryPi
-
 ---
 
 Arduino（センサ側）
