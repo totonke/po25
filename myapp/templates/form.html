@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+データフォーム
+{% endblock %}
+
+{% block content %}
+<form action="/gn/datajson" method="post">
+    <label>日付1</label>
+    <input name="sdate1" type="date" min="2025-01-01" max="2025-12-31">
+
+    <label>日付2</label>
+    <input name="sdate2" type="date" min="2025-01-01" max="2025-12-31">
+
+    <label>dev1</label>
+    <input type="checkbox" name="devno" value="dev1">
+
+    <label>dev2</label>
+    <input type="checkbox" name="devno" value="dev2">
+
+    <label>dev3</label>
+    <input type="checkbox" name="devno" value="dev3">
+
+    <label>dev4</label>
+    <input type="checkbox" name="devno" value="dev4">
+
+    <label>dev5</label>
+    <input type="checkbox" name="devno" value="dev5">
+
+    <input type="submit" value="送信">
+</form>
+{% endblock %}
